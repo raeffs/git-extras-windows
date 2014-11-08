@@ -10,7 +10,7 @@ param(
     [int]$back
 )
 
-if ($env:HOME) { (Get-PSProvider 'FileSystem').Home = $env:HOME }
+. init.ps1
 
 $resetArgument = "^"
 if ($back -gt 1) { $resetArgument = "~$back" }

@@ -1,11 +1,7 @@
 ﻿
-if ($env:HOME) { (Get-PSProvider 'FileSystem').Home = $env:HOME }
+. init.ps1
 
-if ($args.Count -eq 0)
-{
-    Write-Host "branch required!" -ForegroundColor Red
-    exit 1
-}
+if ($args.Count -eq 0) { error "branch name required!" }
 
 $localBranches = ""
 $originBranches = ""

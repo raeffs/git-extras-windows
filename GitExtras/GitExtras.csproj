@@ -60,6 +60,7 @@
     <None Include="git-undo.ps1">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="init.ps1" />
     <None Include="post-build.ps1" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

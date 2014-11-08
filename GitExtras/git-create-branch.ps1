@@ -4,7 +4,7 @@ param(
     [string]$branch
 )
 
-if ($env:HOME) { (Get-PSProvider 'FileSystem').Home = $env:HOME }
+. init.ps1
 
 git push origin HEAD:refs/heads/$branch
 git fetch origin

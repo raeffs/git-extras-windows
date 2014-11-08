@@ -4,7 +4,7 @@ param(
     [switch]$global
 )
 
-if ($env:HOME) { (Get-PSProvider 'FileSystem').Home = $env:HOME }
+. init.ps1
 
 function ShowContent
 {
