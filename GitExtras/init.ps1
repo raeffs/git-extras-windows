@@ -13,3 +13,4 @@ function ExitWithError
 }
 
 Set-Alias -Name error -Value ExitWithError
+Set-Alias -Name null -Value Out-Null
