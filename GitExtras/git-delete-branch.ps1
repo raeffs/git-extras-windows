@@ -14,6 +14,6 @@ foreach ($branch in $args)
     $originRefs += " :refs/heads/$branch"
 }
 
-git branch -D $localBranches
-git branch -d -r $originBranches
-git push origin $originRefs
+iex "git branch -D $localBranches"
+iex "git branch -d -r $originBranches"
+iex "git push origin $originRefs"
