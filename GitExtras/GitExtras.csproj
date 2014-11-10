@@ -66,6 +66,9 @@
     <None Include="git-ignore.ps1">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="git-info.ps1">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="git-refactor.ps1">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
