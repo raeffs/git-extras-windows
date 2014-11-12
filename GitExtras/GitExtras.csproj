@@ -84,6 +84,9 @@
     <None Include="git-undo.ps1">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="git-unlock.ps1">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="init.ps1">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
