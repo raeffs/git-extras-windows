@@ -75,6 +75,9 @@
     <None Include="git-lock.ps1">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="git-locked.ps1">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="git-refactor.ps1">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
