@@ -12,5 +12,23 @@ function ExitWithError
     exit 1
 }
 
+function TouchFile
+{
+    param(
+        [Parameter(Mandatory=$true, Position=0)]
+        [string]$filename
+    )
+
+    if (Test-Path $filename)
+    {
+        (gci $filename).LastWriteTime = Get-Date
+    }
+    else
+    {
+        echo $null > $filename
+    }
+}
+
 Set-Alias -Name error -Value ExitWithError
+Set-Alias -Name touch -Value TouchFile
 Set-Alias -Name null -Value Out-Null
