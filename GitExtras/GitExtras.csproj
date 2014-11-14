@@ -87,6 +87,9 @@
     <None Include="git-show-tree.ps1">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="git-summary.ps1">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="git-touch.ps1">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
