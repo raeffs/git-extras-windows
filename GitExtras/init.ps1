@@ -32,3 +32,5 @@ function TouchFile
 Set-Alias -Name error -Value ExitWithError
 Set-Alias -Name touch -Value TouchFile
 Set-Alias -Name null -Value Out-Null
+
+[System.Console]::OutputEncoding = [System.Text.Encoding]::UTF8
