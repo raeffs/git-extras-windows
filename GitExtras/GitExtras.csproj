@@ -84,6 +84,9 @@
     <None Include="git-refactor.ps1">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="git-reset-file.ps1">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="git-root.ps1">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
