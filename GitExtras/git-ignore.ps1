@@ -10,10 +10,15 @@ function ShowContent
 {
     param($context, $file)
 
-    if (!$file -or !(Test-Path $file)) { return }
-    
-    write "$context gitignore: $file"
-    cat $file
+    if (!(Test-Path $file -PathType Leaf))
+    {
+        write "There is no $context .gitignore yet"
+    }
+    else
+    {
+        write "$context gitignore: $file"
+        cat $file 
+    }
 }
 
 function ShowGlobal
@@ -23,7 +28,9 @@ function ShowGlobal
 
 function ShowLocal
 {
+    pushd $(git root)
     ShowContent "Local" .gitignore
+    popd
 }
 
 function AddPatterns
@@ -45,13 +52,17 @@ function AddPatterns
 function AddGlobal
 {
     param($patterns)
+
     AddPatterns $(iex "git config --global core.excludesfile") $patterns
 }
 
 function AddLocal
 {
     param($patterns)
+
+    pushd $(git root)
     AddPatterns .gitignore $patterns
+    popd
 }
 
 if ($args.Count -eq 0 -and !$local.IsPresent -and !$global.IsPresent)
