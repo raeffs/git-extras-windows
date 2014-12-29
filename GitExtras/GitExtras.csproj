@@ -66,6 +66,9 @@
     <None Include="git-feature.ps1">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="git-graft.ps1">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="git-ignore.ps1">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
