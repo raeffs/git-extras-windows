@@ -3,17 +3,14 @@
 
 if ($args.Count -eq 0) { error "branch name required!" }
 
-$localBranches = ""
-$originBranches = ""
-$originRefs = ""
-
 foreach ($branch in $args)
 {
-    $localBranches += " $branch"
-    $originBranches += " origin/$branch"
-    $originRefs += " :refs/heads/$branch"
-}
+    $remote = $(git config branch.$branch.remote)
+    if (!$remote) { $remote = "origin" }
+    $ref = $(git config branch.$branch.merge)
+    if (!$ref) { $ref = "refs/heads/$branch" }
 
-iex "git branch -D $localBranches"
-iex "git branch -d -r $originBranches"
-iex "git push origin $originRefs"
+    git branch -D $branch
+    git branch -d -r $remote/$branch
+    git push $remote :$ref
+}
