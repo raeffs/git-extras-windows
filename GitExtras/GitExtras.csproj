@@ -78,6 +78,9 @@
     <None Include="git-line-summary.ps1">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="git-local-commits.ps1">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="git-lock.ps1">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
