@@ -87,6 +87,9 @@
     <None Include="git-locked.ps1">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="git-missing.ps1">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="git-obliterate.ps1">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
