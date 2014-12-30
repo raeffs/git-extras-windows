@@ -48,6 +48,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="git-archive-file.ps1">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="git-bug.ps1">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

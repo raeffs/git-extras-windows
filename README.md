@@ -7,7 +7,7 @@ An attempt to bring [Git Extras](https://github.com/tj/git-extras) to windows wi
 | Git Extras command | Available in Git Extras for Windows |
 | ------------------ | ----------------------------------- |
 | [git-alias](https://github.com/tj/git-extras/blob/master/man/git-alias.md) | &#10008; |
-| [git-archive-file](https://github.com/tj/git-extras/blob/master/man/git-archive-file.md) | &#10008; |
+| [git-archive-file](https://github.com/tj/git-extras/blob/master/man/git-archive-file.md) | &#10004; |
 | [git-back](https://github.com/tj/git-extras/blob/master/man/git-back.md) | &#10008; |
 | [git-bug](https://github.com/tj/git-extras/blob/master/man/git-bug.md) | &#10004; |
 | [git-changelog](https://github.com/tj/git-extras/blob/master/man/git-changelog.md) | &#10008; |
