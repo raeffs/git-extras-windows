@@ -12,7 +12,7 @@ An attempt to bring [Git Extras](https://github.com/tj/git-extras) to windows wi
 | [git-bug](https://github.com/tj/git-extras/blob/master/man/git-bug.md) | &#10004; |
 | [git-changelog](https://github.com/tj/git-extras/blob/master/man/git-changelog.md) | &#10008; |
 | [git-commits-since](https://github.com/tj/git-extras/blob/master/man/git-commits-since.md) | &#10004; |
-| [git-contrib](https://github.com/tj/git-extras/blob/master/man/git-contrib.md) | &#10008; |
+| [git-contrib](https://github.com/tj/git-extras/blob/master/man/git-contrib.md) | &#10004; |
 | [git-count](https://github.com/tj/git-extras/blob/master/man/git-count.md) | &#10008; |
 | [git-create-branch](https://github.com/tj/git-extras/blob/master/man/git-create-branch.md) | &#10004; |
 | [git-delete-branch](https://github.com/tj/git-extras/blob/master/man/git-delete-branch.md) | &#10004; |
