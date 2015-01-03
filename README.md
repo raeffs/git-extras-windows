@@ -20,7 +20,7 @@ An attempt to bring [Git Extras](https://github.com/tj/git-extras) to windows wi
 | [git-delete-submodule](https://github.com/tj/git-extras/blob/master/man/git-delete-submodule.md) | &#10008; |
 | [git-delete-tag](https://github.com/tj/git-extras/blob/master/man/git-delete-tag.md) | &#10008; |
 | [git-effort](https://github.com/tj/git-extras/blob/master/man/git-effort.md) | &#10008; |
-| [git-extras](https://github.com/tj/git-extras/blob/master/man/git-extras.md) | &#10008; |
+| [git-extras](https://github.com/tj/git-extras/blob/master/man/git-extras.md) | &#10004; |
 | [git-feature](https://github.com/tj/git-extras/blob/master/man/git-feature.md) | &#10004; |
 | [git-fork](https://github.com/tj/git-extras/blob/master/man/git-fork.md) | &#10008; |
 | [git-fresh-branch](https://github.com/tj/git-extras/blob/master/man/git-fresh-branch.md) | &#10008; |
