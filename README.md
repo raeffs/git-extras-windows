@@ -40,7 +40,7 @@ An attempt to bring [Git Extras](https://github.com/tj/git-extras) to windows wi
 | [git-refactor](https://github.com/tj/git-extras/blob/master/man/git-refactor.md) | &#10004; |
 | [git-release](https://github.com/tj/git-extras/blob/master/man/git-release.md) | &#10008; |
 | [git-rename-tag](https://github.com/tj/git-extras/blob/master/man/git-rename-tag.md) | &#10004; |
-| [git-repl](https://github.com/tj/git-extras/blob/master/man/git-repl.md) | &#10008; |
+| [git-repl](https://github.com/tj/git-extras/blob/master/man/git-repl.md) | &#10004; |
 | [git-reset-file](https://github.com/tj/git-extras/blob/master/man/git-reset-file.md) | &#10004; |
 | [git-root](https://github.com/tj/git-extras/blob/master/man/git-root.md) | &#10004; |
 | [git-setup](https://github.com/tj/git-extras/blob/master/man/git-setup.md) | &#10004; |
