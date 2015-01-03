@@ -35,6 +35,22 @@ function Update
 
 function git-extras
 {
+    <#
+
+    .SYNOPSIS
+    Awesome GIT utilities
+
+    .PARAMETER version
+    Show git-extras version number.
+
+    .PARAMETER update
+    Self update.
+
+    .PARAMETER help
+    Show this help. This option can also be used for any of the extras commands.
+
+    #>
+
     [CmdletBinding(DefaultParameterSetName = 'help')]
     param(
         [Parameter(ParameterSetName = 'version')]
@@ -57,10 +73,9 @@ function git-extras
         }
         "help"
         {
-            Write-Warning "Help not yet implemented!"
+            Get-Help git-extras -Detailed
         }
     }
-
 }
 
 git-extras @args
