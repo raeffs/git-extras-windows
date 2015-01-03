@@ -60,6 +60,9 @@
     <None Include="git-contrib.ps1">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="git-count.ps1">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="git-create-branch.ps1">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
