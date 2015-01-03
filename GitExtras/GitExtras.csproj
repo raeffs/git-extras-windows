@@ -72,6 +72,9 @@
     <None Include="git-delete-merged-branches.ps1">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="git-delete-tag.ps1">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="git-extras.ps1">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
