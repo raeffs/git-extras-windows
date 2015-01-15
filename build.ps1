@@ -1,4 +1,4 @@
-﻿
+
 $msBuildPaths = @(
     "$env:windir\Microsoft.NET\Framework\v4.0.30319\msbuild.exe",
     "$env:ProgramFiles\MSBuild\12.0\bin\msbuild.exe",
