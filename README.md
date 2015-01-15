@@ -2,6 +2,14 @@
 
 An attempt to bring [Git Extras](https://github.com/tj/git-extras) to windows with the help of powershell.
 
+## Installation
+
+Use the following powershell command:
+
+```powershell
+iex (wget "https://raw.githubusercontent.com/raeffs/git-extras-windows/master/install.ps1").Content
+```
+
 ## Commands
 
 | Git Extras command | Available in Git Extras for Windows |
