@@ -16,9 +16,11 @@ iex (wget "https://raw.githubusercontent.com/raeffs/git-extras-windows/master/in
 | ------------------ | ----------------------------------- |
 | [git-alias](https://github.com/tj/git-extras/blob/master/man/git-alias.md) | &#10008; |
 | [git-archive-file](https://github.com/tj/git-extras/blob/master/man/git-archive-file.md) | &#10004; |
+| [git-authors](https://github.com/tj/git-extras/blob/master/man/git-authors.md) | &#10008; |
 | [git-back](https://github.com/tj/git-extras/blob/master/man/git-back.md) | &#10008; |
 | [git-bug](https://github.com/tj/git-extras/blob/master/man/git-bug.md) | &#10004; |
 | [git-changelog](https://github.com/tj/git-extras/blob/master/man/git-changelog.md) | &#10008; |
+| [git-chore](https://github.com/tj/git-extras/blob/master/man/git-chore.md) | &#10008; |
 | [git-commits-since](https://github.com/tj/git-extras/blob/master/man/git-commits-since.md) | &#10004; |
 | [git-contrib](https://github.com/tj/git-extras/blob/master/man/git-contrib.md) | &#10004; |
 | [git-count](https://github.com/tj/git-extras/blob/master/man/git-count.md) | &#10004; |
@@ -27,6 +29,7 @@ iex (wget "https://raw.githubusercontent.com/raeffs/git-extras-windows/master/in
 | [git-delete-merged-branches](https://github.com/tj/git-extras/blob/master/man/git-delete-merged-branches.md) | &#10004; |
 | [git-delete-submodule](https://github.com/tj/git-extras/blob/master/man/git-delete-submodule.md) | &#10004; |
 | [git-delete-tag](https://github.com/tj/git-extras/blob/master/man/git-delete-tag.md) | &#10004; |
+| [git-delta](https://github.com/tj/git-extras/blob/master/man/git-delta.md) | &#10008; |
 | [git-effort](https://github.com/tj/git-extras/blob/master/man/git-effort.md) | &#10008; |
 | [git-extras](https://github.com/tj/git-extras/blob/master/man/git-extras.md) | &#10004; |
 | [git-feature](https://github.com/tj/git-extras/blob/master/man/git-feature.md) | &#10004; |
