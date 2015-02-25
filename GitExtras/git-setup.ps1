@@ -13,4 +13,4 @@ $(md -Force "$directory"; $?) -and
     $(!(Test-Path "$directory"); $?) -and
     $(git init; $?) -and
     $(git add .; $?) -and
-    $(git commit -m "Initial commit"; $?) | null
+    $(git commit --allow-empty -m "Initial commit"; $?) | null
