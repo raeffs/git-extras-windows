@@ -1,19 +1,13 @@
 ﻿
-param(
-    [switch]$line,
-    [Parameter(Position=0)]
-    [string]$commit
-)
-
 . init.ps1
 
 function Project { pwd | Split-Path -Leaf }
 
 function RepositoryAge { git log --reverse --pretty=oneline --format="%ar" | select -First 1 | % { $_ -replace " ago", "" } }
 
-function ActiveDays { (git log --pretty='format: %ai' $commit | % { ("$_" -split ' ')[1] } | select -Unique).Count }
+function ActiveDays { (git log --pretty='format: %ai' $commitish | % { ("$_" -split ' ')[1] } | select -Unique).Count }
 
-function CommitCount { (git log --oneline $commit | select).Count }
+function CommitCount { (git log --oneline $commitish | select).Count }
 
 function FileCount { (git ls-files | select).Count }
 
@@ -30,20 +24,48 @@ function Authors
     } | ft -HideTableHeaders -AutoSize -Property CommitCount, Name, Percentage
 }
 
-if ($line.IsPresent)
+function git-summary
 {
-    git line-summary
-}
-else
-{
-    write "project  : $(Project)"
-    write "repo age : $(RepositoryAge)"
-    write "active   : $(ActiveDays) days"
-    write "commits  : $(CommitCount)"
-    if (!$commit)
+    <#
+
+    .SYNOPSIS
+    Shows a summary of the repository.
+
+    .PARAMETER commitish
+    Summarize only the range of commits included in the <commitish>.
+
+    .PARAMETER line
+    Summarize with lines other than commits
+
+    #>
+
+    param(
+        [switch]$line,
+        [Parameter(Position=0)]
+        [string]$commitish
+    )
+
+    pushd "$(git root)"
+
+    if ($line.IsPresent)
     {
-        write "files    : $(FileCount)"
+        git line-summary
     }
-    write "authors  : "
-    Authors
+    else
+    {
+        write "project  : $(Project)"
+        write "repo age : $(RepositoryAge)"
+        write "active   : $(ActiveDays) days"
+        write "commits  : $(CommitCount)"
+        if (!$commitish)
+        {
+            write "files    : $(FileCount)"
+        }
+        write "authors  : "
+        Authors
+    }
+
+    popd
 }
+
+git-summary @args
