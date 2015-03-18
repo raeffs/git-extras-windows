@@ -1,4 +1,4 @@
 ﻿
 . init.ps1
 
-git branch --no-color --merged | sls -NotMatch "\*" | sls -NotMatch "master" | % { git branch -d "$_".Trim() }
+git branch --no-color --merged | sls -NotMatch "\*" | sls -NotMatch "master" | sls -NotMatch "svn" | % { git branch -d "$_".Trim() }
