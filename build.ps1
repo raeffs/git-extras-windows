@@ -11,4 +11,4 @@ $msBuildPaths | % { if (Test-Path $_ -PathType Leaf) { $msBuild = $_ } }
 
 if (!$msBuild) { throw "Could not find MsBuild!" }
 
-iex "$msBuild GitExtras\GitExtras.sln /p:Configuration=""Release"" /p:Platform=""Any CPU"""
+& $msBuild GitExtras\GitExtras.sln /p:Configuration="Release" /p:Platform="Any CPU"
