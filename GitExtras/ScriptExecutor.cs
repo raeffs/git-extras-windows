@@ -16,7 +16,7 @@ namespace GitExtras
                 process.StartInfo = new ProcessStartInfo
                 {
                     FileName = "powershell.exe",
-                    Arguments = string.Format("-File {0} {1}", scriptToExecute, string.Join(" ", args.Select(a => EncodeParameterArgument(a)))),
+                    Arguments = string.Format("-File \"{0}\" {1}", scriptToExecute, string.Join(" ", args.Select(a => EncodeParameterArgument(a)))),
                     UseShellExecute = false,
                 };
                 process.Start();
