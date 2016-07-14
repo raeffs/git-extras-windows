@@ -1,3 +1,5 @@
+**[Git Extras](https://github.com/tj/git-extras) is now fully supported on Windows, so this project is no longer maintained.**
+
 # Git Extras for Windows
 
 An attempt to bring [Git Extras](https://github.com/tj/git-extras) to windows with the help of powershell.
